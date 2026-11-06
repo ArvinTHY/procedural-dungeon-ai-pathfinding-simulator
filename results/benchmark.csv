@@ -1,0 +1,8 @@
+algorithm,runs,avg_time_ms,avg_visited_nodes,avg_path_length
+A*,50,0.514876,109.84,28.84
+Dijkstra,50,0.758130,297.14,28.84
+BFS,50,0.545102,297.14,28.84
+Greedy,50,0.187544,66.54,30.32
+DFS,50,0.475878,249.12,68.96
+Bidirectional BFS,50,0.326586,171.22,28.84
+Weighted A*,50,0.257894,69.52,29.24

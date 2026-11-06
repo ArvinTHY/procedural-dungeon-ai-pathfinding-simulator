@@ -1,0 +1,20 @@
+Procedural Dungeon AI Pathfinding Simulator V5
+
+Change under test:
+- Player and Enemy have independent algorithm settings.
+- Simulation can run heterogeneous algorithm pairs.
+- Replay records resolved algorithms separately for both actors.
+
+Static checks:
+- Python syntax compilation: PASSED
+- No legacy shared self.config.algorithm_mode references: PASSED
+
+Core heterogeneous checks (seed 24680, Medium):
+- Player A* -> Goal: valid path
+- Enemy Greedy -> Player: valid path
+- Player Bidirectional BFS -> Goal: valid path
+- Enemy DFS -> Player: valid path
+Result: PASSED
+
+UI/runtime note:
+- Pygame is not installed in the build environment, so graphical interaction must be smoke-tested on the user's machine.
